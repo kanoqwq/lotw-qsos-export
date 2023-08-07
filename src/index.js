@@ -3,11 +3,12 @@ import { parseData } from './actions/parseData.js'
 import { fetchData } from './utils/fetch.js'
 import { login } from './actions/login.js'
 import { logout } from './actions/logout.js'
+import { configs } from './utils/config.js'
 
-//input your user info
+//input your user info in .env file
 const loginData = {
-    login: 'bi3aq',
-    password: 'xxxxxx'
+    login: configs.LOTW_USER,
+    password: configs.LOTW_PWD
 }
 
 // logout().then(() => {
